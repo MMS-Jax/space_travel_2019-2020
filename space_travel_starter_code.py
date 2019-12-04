@@ -76,7 +76,24 @@ else:  # If it's none of these, it must be option 6.
 speed = input("How fast will you travel?  Type numbers only and press enter.  Your speed should is measured in Km / s.\n") # Ask the user to input a value for speed.
 print("You entered: " ,speed," Km / s.\n") # Print the value back to double check.
 
+# Next we need to make sure they are not traveling faster than the speed of light, which is 300,000 Km / s.
 
+if speed ? 300000: 
+    print("You cannot travel faster than light.  Please enter a new speed less than or equal to 300,000 Km / s.")
+    speed = input("Enter the new speed and press ENTER.\n")
+else:
+    print("You are not exceeding the speed of light!\n")
+
+# Finally, we need to check if the travel_time is less than or equal to three years.
+seconds_per_year = ? # Make this variable equal to the number of seconds in ONE YEAR.
+
+max_travel_time = seconds_per_year * ? # Replace the ? with the maximum number of years.
+
+travel_time = # Divide the travel_distance by speed to get our travel time in seconds.
+
+# Finally, use an if/elif/else: statement to determine if the travel_time is less than or equal to the max_travel_time.
+# If the the travel_time is less than or equal to max_travel_time, print a message of success!
+# If the travel_time is greater than the max_travel_time, print a message of failure! 
 
     
     
