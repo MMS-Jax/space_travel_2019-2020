@@ -1,4 +1,2 @@
-# Space Travel Calculator, Ryan Kelley, Code Created 01/13/20, Version 0.0
-print("Hello, I am the NASA Space Travel Calculator. I will help you calculate travel times to outer space.")
-user_name = input("Hello human, by what name are you known?")
-print("Hello, " + user_name)
+# Space Travel Calculator, Ryan Kelley, 01/14/20 3:57PM, Version 0.0
+print("oijsdf9p8482uy9pyhasdfuh789y897y79y ")
