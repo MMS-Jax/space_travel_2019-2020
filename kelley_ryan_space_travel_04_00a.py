@@ -13,6 +13,7 @@ distance_mars = 225 * million
 distance_pluto = 5.9 * billion 
 distance_saturn = 1.4 * billion 
 
-print("The distance to Mars is" + distance_mars)
-print("The distance to Pluto is" + distance_pluto)
-print("The distance to Saturn is" + distance_saturn)
+print("The distance to Mars is",distance_mars,"kilometers.")
+print("The distance to Saturn is",distance_saturn,"kilometers.")
+print("The distance to Pluto is",distance_pluto,"kilometers.")
+
