@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 01/16/20 12:10PM, Version 0.1
-print("Greetings!  I am the SpaceTravel Calcu-Bot 5000.  I will determine whether you will die in outerspace or not.") 
-user_name = input("WHAT IS YOUR NAME?!? [Type your first name then press ENTER key.]")
-print(user_name)
+# Space Travel Calculator, Ryan Kelley, 01/14/20 1:08PM, Version 0.2
+print("Greetings, I am the NASA Space Travel Calculator. I will help you calculate travel times to different places in space.") 
+name = input("How are you!  What is your name? [Type your name and press ENTER.]")
+print("Good afternoon," + name)
