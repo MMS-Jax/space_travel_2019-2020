@@ -1,2 +1,2 @@
-# Space Travel Calculator, Ryan Kelley, 01/17/20 2:53PM, Version 0.0 
-print("    juygfuyfu6dfu6t76r67rytyfuyfu6r67ruyguyf       ")
+# Space Travel Calculator, Ryan Kelley, 01/17/20 3:17PM, Version 0.1
+print("Hello human! I am the Space-Travel Robot Calculator.  I will determine if a trip to outerspace will take more or less than three years.  ")
