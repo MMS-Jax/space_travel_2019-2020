@@ -1,3 +1,5 @@
+###  This document contains the features that we will code for each version of the Space Travel Calculator.  
+
 0.0 --> # Comment with program info (name, date, version) and author info. 
 0.1 --> print() instructions
 0.2 -->  input() user_name and print it to the screen. 
