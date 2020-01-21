@@ -1,19 +1,28 @@
-# Space Travel Calculator, Ryan Kelley, Code Written 01/21/20 12:46PM, Version 0.4
-print("Hello, I am the Space-Travel Calcubot.  I will help you determine if a mission will take more or less than three years.")  
-name = input("By what name do you want to be called? [Type your name and press ENTER.]")
-# print(name)
-print("Hello!  It is nice to meet you,",name,".")
+# Space Travel Calculator, Ryan Kelley, 01/21/20 1:11PM, Version 0.45
+print("Greetings, I am the NASA Space Travel Calculator. I will help you calculate travel times to different places in space.") 
+name = input("How are you!  What is your name? [Type your name and press ENTER.]")
+print("Good afternoon," + name)
 
-# Units of Measurement 
-million = 1000000 # Six Zero's 
-billion = 1000000000 # Nine Zero's 
-trillion = 1000000000000 # Twelve Zero's 
+# Millions and Billions 
+million = 1000000 # Six 0's
+billion = 1000000000 # Nine 0's 
+trillion = 1000000000000 # Twelve 0's 
 
-# Averages Distances Inside Solar System [Kilometers] 
-distance_mars = 225 * million 
-# print(distance_mars) 
-print("Mars is ", distance_mars, "kilometers away.") 
-distance_sun = 150 * million
-print("The Sun is ", distance_sun, "kilometers away.") 
-distance_uranus = 2.9 * billion  
-print("Uranus is ", distance_uranus, "kilometers away.") 
+
+# Distances for Objects in our Solar System [Measured in kilometers.] 
+distance_mars = 225 * million  
+distance_pluto = 5.9 * billion 
+distance_saturn = 1.4 * billion 
+
+print("The distance to Mars is",distance_mars,"kilometers.")
+print("The distance to Saturn is",distance_saturn,"kilometers.")
+print("The distance to Pluto is",distance_pluto,"kilometers.")
+
+# Distances for Objects Outside of the Solar System [Measured in kilometers.] 
+light_year = 9.4607e+12 # Kilometers 
+distance_alpha_centauri = 4.22 * light_year 
+print("The distance to Alpha Centauri is",distance_alpha_centauri,"kilometers.")
+distance_cygnusX3 = 11000 * light_year 
+print("The distance to the blackhole at Cygnus X-3 is",distance_cygnusX3,"kilometers.")
+distance_neutron_star = 625 * light_year 
+print("The distance to the closest neutron star is",distance_neutron_star,"kilometers.")
