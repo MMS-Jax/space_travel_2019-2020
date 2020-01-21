@@ -1,12 +1,5 @@
-# Space Travel Calculator, Ryan Kelley, Code Written 01/21/20 10:07am, Version 0.28 
-print("Hello! I am the Space Travel Calculator.  I will help determine the length of space missions.")
-user_name = input("What is your name? [Type your name and press ENTER.] ") 
-# print(user_name) 
-print("Hello, it is good to meet you", user_name , "!  I hope you enjoy using this program.") 
-
-# Units of Measurement 
-million = 1000000
-billion = 1000000000
-trillion = 1000000000000
-
-print(5 * million) 
+# Space Travel Calculator, Ryan Kelley, Code Written 01/14/20 12:16PM, Version 0.1
+print("Hello, I am the Space-Travel Calcubot.  I will help you determine if a mission will take more or less than three years.")  
+name = input("By what name do you want to be called? [Type your name and press ENTER.]")
+print(name)
+print("Hello!  It is nice to meet you,",name,".")
