@@ -5,7 +5,7 @@
 0.2 -->  input() user_name and print it to the screen. 
 0.3 --> # Units of Measurement (million, billion, trillion) 
 0.4 --> # distances_in_solar_system, multiply by unit of measurement. (All distances in Km) 
-0.45 --> # distances_out_of_solar_system, multiply by unit of measurement.  
+0.45 --> # distances_out_of_solar_system, multiply by unit of measurement. (Add light_year converter) 
 0.5 --> if/else statement to select distance.  
 0.6 --> Enter speed, if/else statement to verify less than speed of light. 
 0.7 --> Calculate amount of time to travel in seconds, rounding to nearest whole second 
