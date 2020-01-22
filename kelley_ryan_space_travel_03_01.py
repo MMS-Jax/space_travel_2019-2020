@@ -28,4 +28,5 @@ print("Mars is ", distance_mars, "kilometers away.")
 distance_sun = 150 * million
 print("The Sun is ", distance_sun, "kilometers away.") 
 distance_uranus = 2.9 * billion  
-print("Uranus is ", distance_uranus, "kilometers away.") 
+print("Uranus is ", distance_uranus, "kilometers away.")
+
