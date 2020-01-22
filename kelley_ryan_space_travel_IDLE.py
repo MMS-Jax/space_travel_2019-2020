@@ -1,17 +1,31 @@
-# Space Travel Calculator, Ryan Kelley, Code Created 01/21/20 3:48PM, Version 0.3
-print("Hello, I am the NASA Space Travel Calculator. I will help you calculate travel times to outer space.")
-user_name = input("Hello human, by what name are you known?")
-print("Hello, it is nice to meet you",user_name,"!")
+# Space Travel Calculator, Ryan Kelley, Code Written 01/21/20 12:46PM, Version 0.4
+print("/*************************************************************************\\")
+print("|                                                                         |")
+print("|                                                                         |")
+print("|                              SPACE TRAVEL CALCULATOR                    |")
+print("|                                   Version 0.25                          |")
+print("|                                       by                                |")
+print("|                                   Ryan Kelley                           |")      
+print("|                                                                         |")
+print("|                                                                         |")
+print("|                                                                         |")
+print("\\*************************************************************************/")
+print("Hello, I am the Space-Travel Calcubot.  I will help you determine if a mission will take more or less than three years.")  
+name = input("By what name do you want to be called? [Type your name and press ENTER.]")
+# print(name)
+print("Hello!  It is nice to meet you,",name,".")
 
 # Units of Measurement 
-million = 1000000
-billion = 1000000000
-trillion = 1000000000000 
+million = 1000000 # Six Zero's 
+billion = 1000000000 # Nine Zero's 
+trillion = 1000000000000 # Twelve Zero's 
 
-# Average Distances Inside Solar System  [Uses Kilometers (Km)] 
-dist_mars = 225 * million 
-print("Mars is only",dist_mars,"kilometers away from the Earth.") 
-dist_venus = 149.5 * million 
-print("Venus is only",dist_mars,"kilometers away from the Earth.") 
-dist_kuiper_belt = 5.95 * billion 
-print("The Kuiper Belt is only",dist_mars,"kilometers away from the Earth.") 
+# Averages Distances Inside Solar System [Kilometers] 
+distance_mars = 225 * million 
+# print(distance_mars) 
+
+print("Mars is ", distance_mars, "kilometers away.") 
+distance_sun = 150 * million
+print("The Sun is ", distance_sun, "kilometers away.") 
+distance_uranus = 2.9 * billion  
+print("Uranus is ", distance_uranus, "kilometers away.") 
