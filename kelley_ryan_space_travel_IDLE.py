@@ -23,7 +23,10 @@ print("""
 |_______||__| |__||_______||_______||_______||_______||__| |__|  |___|  |_______||___|  |_|
 
                                          by 
-				     Ryan Kelley 
-				     Version 0.1
-				  January 23, 2020
+                                    Ryan Kelley
+                                    Version 0.1
+									January 23, 2020
 """)
+print("Greetings!  The space travel calculator will help determine if a trip to outerspace will take more or less than three years.")
+name = input("Hello, how are you?  By what name do you want to be called? [Type your first and last name then press ENTER.]") 
+print(name) 
