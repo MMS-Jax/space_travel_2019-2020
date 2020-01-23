@@ -1,31 +1,29 @@
-# Space Travel Calculator, Ryan Kelley, Code Written 01/21/20 12:46PM, Version 0.4
-print("/*************************************************************************\\")
-print("|                                                                         |")
-print("|                                                                         |")
-print("|                              SPACE TRAVEL CALCULATOR                    |")
-print("|                                   Version 0.25                          |")
-print("|                                       by                                |")
-print("|                                   Ryan Kelley                           |")      
-print("|                                                                         |")
-print("|                                                                         |")
-print("|                                                                         |")
-print("\\*************************************************************************/")
-print("Hello, I am the Space-Travel Calcubot.  I will help you determine if a mission will take more or less than three years.")  
-name = input("By what name do you want to be called? [Type your name and press ENTER.]")
-# print(name)
-print("Hello!  It is nice to meet you,",name,".")
+# Space Travel Calculator, Ryan Kelley, 01/22/20 10:01AM, Version 0.0 
+print("""
+ _______  _______  _______  _______  _______                                               
+|       ||       ||   _   ||       ||       |                                              
+|  _____||    _  ||  |_|  ||       ||    ___|                                              
+| |_____ |   |_| ||       ||       ||   |___                                               
+|_____  ||    ___||       ||      _||    ___|                                              
+ _____| ||   |    |   _   ||     |_ |   |___                                               
+|_______||___|    |__| |__||_______||_______|                                              
+ _______  ______    _______  __   __  _______  ___                                         
+|       ||    _ |  |   _   ||  | |  ||       ||   |                                        
+|_     _||   | ||  |  |_|  ||  |_|  ||    ___||   |                                        
+  |   |  |   |_||_ |       ||       ||   |___ |   |                                        
+  |   |  |    __  ||       ||       ||    ___||   |___                                     
+  |   |  |   |  | ||   _   | |     | |   |___ |       |                                    
+  |___|  |___|  |_||__| |__|  |___|  |_______||_______|                                    
+ _______  _______  ___      _______  __   __  ___      _______  _______  _______  ______   
+|       ||   _   ||   |    |       ||  | |  ||   |    |   _   ||       ||       ||    _ |  
+|       ||  |_|  ||   |    |       ||  | |  ||   |    |  |_|  ||_     _||   _   ||   | ||  
+|       ||       ||   |    |       ||  |_|  ||   |    |       |  |   |  |  | |  ||   |_||_ 
+|      _||       ||   |___ |      _||       ||   |___ |       |  |   |  |  |_|  ||    __  |
+|     |_ |   _   ||       ||     |_ |       ||       ||   _   |  |   |  |       ||   |  | |
+|_______||__| |__||_______||_______||_______||_______||__| |__|  |___|  |_______||___|  |_|
 
-# Units of Measurement 
-million = 1000000 # Six Zero's 
-billion = 1000000000 # Nine Zero's 
-trillion = 1000000000000 # Twelve Zero's 
-
-# Averages Distances Inside Solar System [Kilometers] 
-distance_mars = 225 * million 
-# print(distance_mars) 
-
-print("Mars is ", distance_mars, "kilometers away.") 
-distance_sun = 150 * million
-print("The Sun is ", distance_sun, "kilometers away.") 
-distance_uranus = 2.9 * billion  
-print("Uranus is ", distance_uranus, "kilometers away.") 
+                                         by 
+				     Ryan Kelley 
+				     Version 0.1
+				  January 23, 2020
+""")
