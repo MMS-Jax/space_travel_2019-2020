@@ -1,4 +1,27 @@
 # Space Travel Calculator, Ryan Kelley, Code Created 01/21/20 4:09PM, Version 0.4
+print("""
+.▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
+▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
+▄▀▀▀█▄ ██▀·▄█▀▀█ ██ ▄▄▐▀▀▪▄                              
+▐█▄▪▐█▐█▪·•▐█ ▪▐▌▐███▌▐█▄▄▌                              
+ ▀▀▀▀ .▀    ▀  ▀ ·▀▀▀  ▀▀▀                               
+▄▄▄▄▄▄▄▄   ▄▄▄·  ▌ ▐·▄▄▄ .▄▄▌                            
+•██  ▀▄ █·▐█ ▀█ ▪█·█▌▀▄.▀·██•                            
+ ▐█.▪▐▀▀▄ ▄█▀▀█ ▐█▐█•▐▀▀▪▄██▪                            
+ ▐█▌·▐█•█▌▐█ ▪▐▌ ███ ▐█▄▄▌▐█▌▐▌                          
+ ▀▀▀ .▀  ▀ ▀  ▀ . ▀   ▀▀▀ .▀▀▀                           
+ ▄▄·  ▄▄▄· ▄▄▌   ▄▄· ▄• ▄▌▄▄▌   ▄▄▄· ▄▄▄▄▄      ▄▄▄      
+▐█ ▌▪▐█ ▀█ ██•  ▐█ ▌▪█▪██▌██•  ▐█ ▀█ •██  ▪     ▀▄ █·    
+██ ▄▄▄█▀▀█ ██▪  ██ ▄▄█▌▐█▌██▪  ▄█▀▀█  ▐█.▪ ▄█▀▄ ▐▀▀▄     
+▐███▌▐█ ▪▐▌▐█▌▐▌▐███▌▐█▄█▌▐█▌▐▌▐█ ▪▐▌ ▐█▌·▐█▌.▐▌▐█•█▌    
+·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀
+
+                    by
+                Ryan Kelley
+                Version 0.4
+              January 23, 2020
+
+""")
 print("Hello, I am the NASA Space Travel Calculator. I will help you calculate travel times to outer space.")
 user_name = input("Hello human, by what name are you known?")
 print("Hello, it is nice to meet you",user_name,"!")

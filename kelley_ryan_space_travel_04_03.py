@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 01/16/20 2:51PM, Version 0.2
+# Space Travel Calculator, Ryan Kelley, 01/17/20 12:47PM, Version 0.2 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -22,6 +22,7 @@ print("""
               January 23, 2020
 
 """)
-print("This is the Space Travel Calculator. I help determine if you can travel to a certain location in outerspace safely.")  
-name = input("uhhh, what's your name? [Type your name and press the ENTER key.]")
-print(name)
+print("Greetings, I am the NASA Space Travel Calculator.")
+print("I will calculate whether a mission to outerspace will take more or less than three years.")
+user_name = input("What do I call you? [Please type your first name and press ENTER.]   ")
+print(user_name)

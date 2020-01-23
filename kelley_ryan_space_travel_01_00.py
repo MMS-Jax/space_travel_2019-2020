@@ -1,4 +1,27 @@
-# Space Travel Calculator, Ryan Kelley, Code Written 01/21/20 10:07am, Version 0.28 
+# Space Travel Calculator, Ryan Kelley, Code Written 01/21/20 10:07am, Version 0.25
+print("""
+.▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
+▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
+▄▀▀▀█▄ ██▀·▄█▀▀█ ██ ▄▄▐▀▀▪▄                              
+▐█▄▪▐█▐█▪·•▐█ ▪▐▌▐███▌▐█▄▄▌                              
+ ▀▀▀▀ .▀    ▀  ▀ ·▀▀▀  ▀▀▀                               
+▄▄▄▄▄▄▄▄   ▄▄▄·  ▌ ▐·▄▄▄ .▄▄▌                            
+•██  ▀▄ █·▐█ ▀█ ▪█·█▌▀▄.▀·██•                            
+ ▐█.▪▐▀▀▄ ▄█▀▀█ ▐█▐█•▐▀▀▪▄██▪                            
+ ▐█▌·▐█•█▌▐█ ▪▐▌ ███ ▐█▄▄▌▐█▌▐▌                          
+ ▀▀▀ .▀  ▀ ▀  ▀ . ▀   ▀▀▀ .▀▀▀                           
+ ▄▄·  ▄▄▄· ▄▄▌   ▄▄· ▄• ▄▌▄▄▌   ▄▄▄· ▄▄▄▄▄      ▄▄▄      
+▐█ ▌▪▐█ ▀█ ██•  ▐█ ▌▪█▪██▌██•  ▐█ ▀█ •██  ▪     ▀▄ █·    
+██ ▄▄▄█▀▀█ ██▪  ██ ▄▄█▌▐█▌██▪  ▄█▀▀█  ▐█.▪ ▄█▀▄ ▐▀▀▄     
+▐███▌▐█ ▪▐▌▐█▌▐▌▐███▌▐█▄█▌▐█▌▐▌▐█ ▪▐▌ ▐█▌·▐█▌.▐▌▐█•█▌    
+·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀
+
+                    by
+                Ryan Kelley
+                Version 0.25
+              January 23, 2020
+
+""")
 print("Hello! I am the Space Travel Calculator.  I will help determine the length of space missions.")
 user_name = input("What is your name? [Type your name and press ENTER.] ") 
 # print(user_name) 
