@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 01/24/20 2:21PM, Version 0.4a
+# Space Travel Calculator, Ryan Kelley, 01/24/20 2:26PM, Version 0.45
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -18,7 +18,7 @@ print("""
                 by
             Ryan Kelley
             January 24, 2020
-            Version 0.4a
+            Version 0.45
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -38,3 +38,13 @@ print("The distance to the Sun is",dist_sun," kilometers.")
 print("The distance to Mars is",dist_mars," kilometers.")
 print("The distance to Pluto is",dist_pluto," kilometers.")
 
+# Distances Outside of Solar System [Measured in kilometers.]
+light_year = 9460730000000
+
+dist_alpha_centauri = 4.3 * light_year
+dist_??
+dist_??
+
+print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
+print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
+print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
