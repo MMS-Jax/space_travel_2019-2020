@@ -1,1 +1,11 @@
-# Space Travel Calculator, Ryan Kelley, 01/24/20 11:18AM, Version 0.0
+# Space Travel Calculator, Ryan Kelley, 01/24/20 11:18AM, Version 0.1
+print("+====================================================+")
+print("+                                                    +")
+print("+                Space Travel Calculator             +")
+print("+                         by                         +")
+print("+                     Ryan Kelley                    +")
+print("+                  January 24, 2020                  +")
+print("+                      Version 0.1                   +")
+print("+                                                    +")
+print("+                                                    +")
+print("+====================================================+")
