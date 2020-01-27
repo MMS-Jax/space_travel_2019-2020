@@ -39,12 +39,12 @@ print("The distance to Mars is",dist_mars," kilometers.")
 print("The distance to Pluto is",dist_pluto," kilometers.")
 
 # Distances Outside of Solar System [Measured in kilometers.]
-light_year = 9460730000000
+light_year = 9460730000000 # Kilometers in a light year.  
 
 dist_alpha_centauri = 4.3 * light_year
-dist_??
-dist_??
+dist_eps_eridani_b = 10.44 * light_year
+dist_v616_mon = 2800 * light_year
 
 print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
-print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
-print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
+print("The distance to the exoplanet Eps Eridani B is",dist_eps_eridani_b," kilometers.")
+print("The distance to the nearest blackholeis",dist_v616_mon," kilometers.")
