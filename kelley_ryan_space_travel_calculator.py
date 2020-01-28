@@ -56,9 +56,7 @@ print("# distance between the Earth and your chosen object.                     
 print("#                                                                        #")
 print("# To make your selection, type in the number from the list above, then   #")
 print("# press the ENTER key.                                                   #")
-print("#                                                                        #")
 print("#------------------------------------------------------------------------#")
-
 
 # print("The distance to the Sun is",dist_sun," kilometers.")
 # print("The distance to Mars is",dist_mars," kilometers.")
