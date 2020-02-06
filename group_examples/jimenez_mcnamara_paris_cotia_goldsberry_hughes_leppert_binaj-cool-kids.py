@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 01/27/20 9:10AM, Version 0.5
+# Space Travel Calculator, Ryan Kelley, 02/06/20 1:33PM, Version 0.6
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,8 +17,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            January 27, 2020
-            Version 0.5
+            February 06, 2020
+            Version 0.6
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -57,9 +57,32 @@ print("#                                                                        
 print("# To make your selection, type in the number from the list above, then   #")
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
+object = int(input("What object do you want to select?"))
+
+distance = 0
+
+if object == 0:
+    distance = dist_sun 
+    print("The distance to the Sun is",distance," kilometers.")
+elif object == 1:
+    distance = dist_mars
+    print("The distance to Mars is",distance," kilometers.")
+elif object == 2:
+    distance = dist_pluto
+    print("The distance to Pluto is",distance," kilometers.")
+elif object == 3:
+    distance = dist_alpha_centauri
+    print("The distance to Alpha Centauri is",distance," kilometers.")
+elif object == 4:
+    distance = dist_eps_eridani_b
+    print("The distance to the exoplanet Eps Eridani B is",distance," kilometers.")
+elif object == 5:
+    distance = dist_v616_mon
+    print("The distance to the blackhole V616 Mon is",distance," kilometers.")
+else: 
+    print("You did not enter a number from the menu!  I will now explode.")
+    exit()
 
 
 
-# print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
-# print("The distance to the exoplanet Eps Eridani B is",dist_eps_eridani_b," kilometers.")
-# print("The distance to the nearest blackhole is",dist_v616_mon," kilometers.")
+
