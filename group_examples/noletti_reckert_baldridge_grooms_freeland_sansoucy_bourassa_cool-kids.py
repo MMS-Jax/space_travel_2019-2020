@@ -1,4 +1,5 @@
-# Space Travel Calculator, Ryan Kelley, 01/27/20 9:10AM, Version 0.5
+# Space Travel Calculator, Ryan Kelley, 02/06/20 12:46PM, Version 0.6
+import time
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,13 +18,13 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            January 27, 2020
-            Version 0.5
+            February 06, 2020
+            Version 0.6
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
-
+time.sleep(3)
 # Units of Measurement
 million = 1000000
 billion = 1000000000
@@ -74,18 +75,17 @@ elif object == 3:
     print("The distance to Alpha Centauri is",distance," kilometers.")
 elif object == 4:
     distance = dist_eps_eridani_b
-    print("The distance to Eps Eridani B is",distance," kilometers.")
+    print("The distance to the exoplanet Eps Eridani B is",distance," kilometers.")
 elif object == 5:
     distance = dist_v616_mon
-    print("The distance to V616 Mon is",distance," kilometers.")
+    print("The distance to blackhole V616 Mon is",distance," kilometers.")
 else: 
     print("Error!  You did not enter a valid number from the menu.  Please restart the program.") 
     exit() 
-# 
-# print("The distance to Pluto is",dist_pluto," kilometers.")
+time.sleep(3)
+
+kachow = int(input("Kachow!  How fast will you travel?  Your speed is measured in Km / s.  You only need to enter the number, no commas!"))
+print(kachow)
 
 
 
-# print("The distance to Alpha Centauri is",dist_alpha_centauri," kilometers.")
-# print("The distance to the exoplanet Eps Eridani B is",dist_eps_eridani_b," kilometers.")
-# print("The distance to the nearest blackhole is",dist_v616_mon," kilometers.")
