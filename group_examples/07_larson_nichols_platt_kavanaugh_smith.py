@@ -1,5 +1,5 @@
-
-# Space Travel Calculator, Ryan Kelley, 02/10/20 3:42PM, Version 0.65
+# Space Travel Calculator, Ryan Kelley, 02/10/20 3:42PM, Version 1.0
+import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -19,12 +19,12 @@ print("""
                 by
             Ryan Kelley
             February 10, 2020
-            Version 0.65
+            Version 1.0
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
-
+time.sleep(3)
 # Units of Measurement
 million = 1000000
 billion = 1000000000
@@ -59,6 +59,7 @@ print("# To make your selection, type in the number from the list above, then   
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
 object = int(input("What object do you want?"))
+time.sleep(3)
 #print(object)
 
 distance = 0
@@ -84,7 +85,7 @@ elif object == 5:
 else:
     print("Error!  You did not choose an option from the menu.")
     exit()
-
+time.sleep(3)
 speed = int(input("Please enter the speed in Km/s.  You do not need to enter commas or Km/s, just the number."))
 print(speed)
 
@@ -100,4 +101,22 @@ if speed > light_speed:
         print("Ok, you entered",speed,"Km / s.")  
 else:
         print("Ok, you entered",speed,"Km / s.")
+time.sleep(3)
+speed = int(speed)
+trip_time = distance / speed
+print("The time in seconds for the trip is:",trip_time,".")
+# Extra Credit -- Figure out and print the trip time in days.  
+seconds_per_year = 3.154e7
+max_trip = seconds_per_year * 3
+
+if trip_time > max_trip:
+    print("Your trip time will exceed three years.  The mission will most likely be unsucessful.")
+else:
+    print("Your trip time is less than or equal to three years.  The mission will most likely be successful.")
+
+    
+
+
+
+
 
