@@ -57,17 +57,7 @@ print("#                                                                        
 print("# To make your selection, type in the number from the list above, then   #")
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
-object = int(input("What object do you want?"))
-#print(object)
 
-distance = 0
-
-if object == 0:
-    distance = dist_sun
-    print("The distance to the Sun is",distance," kilometers.")
-else:
-    print("Error!  You did not choose an option from the menu.")
-    exit()
 
 
 
