@@ -103,8 +103,14 @@ else:
 time.sleep(3)
 
 trip_time = distance / speed
-#print(trip_time)
+print("The trip time is",trip_time,"seconds.")
+print("Next, I will calculate if the trip will take more or less than three years.")
+time.sleep(3)
 
+seconds_per_year =
+max_travel = seconds_per_year * 3 
+
+if trip_time ? max_travel: 
 
     
 
