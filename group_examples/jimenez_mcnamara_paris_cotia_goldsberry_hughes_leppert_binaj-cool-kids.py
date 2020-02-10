@@ -1,4 +1,5 @@
-# Space Travel Calculator, Ryan Kelley, 02/06/20 1:33PM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 02/10/20 1:32PM, Version 0.7
+import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,12 +18,13 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 06, 2020
-            Version 0.6
+            February 10, 2020
+            Version 0.7
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
+time.sleep(3)
 
 # Units of Measurement
 million = 1000000
@@ -57,6 +59,7 @@ print("#                                                                        
 print("# To make your selection, type in the number from the list above, then   #")
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
+time.sleep(3) 
 object = int(input("What object do you want to select?"))
 
 distance = 0
@@ -82,7 +85,28 @@ elif object == 5:
 else: 
     print("You did not enter a number from the menu!  I will now explode.")
     exit()
+time.sleep(3) 
+speed = input("Please enter a speed in Km / s.  Do not enter commas in your number!") 
+speed = int(speed)
 
+light_speed = 299792
+
+if speed > light_speed:
+    speed = int(input("You entered a value faster than the speed of light.  Please enter a value less than or equal to 299792."))
+    if speed > light_speed:
+        print("I do not think you can read.  Please restart the program.")
+        exit() 
+    else:
+        print("Ok, your speed is",speed,"Km / s.")
+else:
+    print("Ok, your speed is",speed,"Km / s.")
+time.sleep(3)
+
+trip_time = distance / speed
+#print(trip_time)
+
+
+    
 
 
 
