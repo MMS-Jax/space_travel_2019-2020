@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 02/06/20 12:46PM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 02/10/20 12:45PM, Version 1.0
 import time
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
@@ -18,8 +18,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 06, 2020
-            Version 0.6
+            February 10, 2020
+            Version 1.0
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -85,7 +85,38 @@ else:
 time.sleep(3)
 
 kachow = int(input("Kachow!  How fast will you travel?  Your speed is measured in Km / s.  You only need to enter the number, no commas!"))
-print(kachow)
+speed_of_light = 299792
+
+if kachow > speed_of_light:
+    kachow = int(input("You cannot go faster than the speed of light!  Enter a number less than 299792."))
+    if kachow > speed_of_light:
+        print("Apparently you cannot read.  Please restart the program.")
+        exit()
+    else:
+        print("Ok, thank you for entering a speed slower than light.")
+else: 
+    print("You entered",kachow,"Km / s for the speed.")
+time.sleep(3)
+
+distance = int(distance)
+travel_time = distance / kachow
+# print(travel_time)
+seconds_in_year = 31536000
+max_time = seconds_in_year * 3
+
+if travel_time > max_time:
+    print("Your speed is not high enough.  The trip will take longer than three years and will most likely fail.")
+else:
+    print("Your trip will take less than the maximum of three years.  Your trip should be successful.")
+
+print("This program will exit in five seconds.")
+time.sleep(5)
+exit() 
+# Extra Credit -- Print your actual trip time in number of days.
+
+
+    
+
 
 
 
