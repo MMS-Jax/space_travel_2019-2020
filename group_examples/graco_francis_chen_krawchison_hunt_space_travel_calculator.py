@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 02/11/20 3:07PM, Version 0.7
+# Space Travel Calculator, Ryan Kelley, 02/12/20 3:07PM, Version 1.0
 import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
@@ -18,8 +18,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 11, 2020
-            Version 0.7
+            February 12, 2020
+            Version 1.0
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -102,6 +102,23 @@ if speed > light_speed:
 else:
         print("Ok, your speed is",speed," Km / s.")
 time.sleep(3)
+
+trip_time = distance / speed
+seconds_per_year = 3.154e7
+max_time = seconds_per_year * 3
+
+print("The trip will take",trip_time,"seconds to complete.")
+
+if trip_time > max_time:
+    print("The trip will take more than three years.  It will most likely not succeed.")
+else:
+    print("The trip time is less than or equal to three years.  It will most likely succeed.")
+time.sleep(3)
+
+print("I hope you have enjoyed using this program.  I will now explode!  Sorry, I mean exit.")
+exit() 
+
+
 
 
 
