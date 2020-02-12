@@ -83,5 +83,19 @@ else:
     print("You did not choose a number from the menu.  This program will now exlpode.  Please restart.")
     exit() 
 
+speed = 0
+light_speed = 299792
 
+speed = int(input("Please enter your speed in Km / s.  Do not enter commas, just the number.  Do not exceed the speed of light: 299,792 Km / s."))
+
+if speed > light_speed:
+    print("You entered a speed greater than the speed of light!  That is impossible!")
+    speed = int(input("Please enter your speed in Km / s.  Do not enter commas, just the number.  Do not exceed the speed of light: 299,792 Km / s."))
+    if speed > light_speed:
+        print("It is obvious you cannot read and follow directions.  This program will now exit.")
+        exit()
+    else:
+        print("Ok, that speed is fine.  You entered",speed," Km / s for your speed.") 
+else:
+        print("Ok, that speed is fine.  You entered",speed," Km / s for your speed.") 
 
