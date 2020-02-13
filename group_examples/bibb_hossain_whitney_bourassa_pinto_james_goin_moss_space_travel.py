@@ -117,8 +117,12 @@ else:
 time.sleep(3)
 
 print("I hope you have enjoyed using this program.  Good luck exploring outer space!")
-print("I will exit in 5 seconds.")
-time.sleep(5)
+
+x = 10
+while x != 0:
+    print("I will exit in",x," seconds.")
+    time.sleep(1)
+    x += -1
 exit() 
 
 
