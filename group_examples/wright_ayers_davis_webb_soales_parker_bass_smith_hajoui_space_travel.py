@@ -1,4 +1,5 @@
-# Space Travel Calculator, Ryan Kelley, 02/12/20 1:28PM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 02/13/20 1:22PM, Version 0.7
+import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,13 +18,13 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 12, 2020
-            Version 0.6
+            February 13, 2020
+            Version 0.7
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
-
+time.sleep(3)
 # Units of Measurement
 million = 1000000
 billion = 1000000000
@@ -59,6 +60,7 @@ print("# press the ENTER key.                                                   
 print("#------------------------------------------------------------------------#")
 
 choice = int(input("Please make a choice."))
+time.sleep(3)
 distance = 0
 
 if choice == 0:
@@ -88,5 +90,46 @@ elif choice == 5:
 else:
     print("Error!  You did not choose a valid number from the menu!  This program will now explode.  Please restart.")
     exit() 
-
+time.sleep(3)
 speed = 0
+speed = int(input("Please enter your speed in Km / s.  Please DO NOT enter commas or Km / s, just the number then press [ENTER]."))
+
+light_speed = 299792
+
+if speed > light_speed:
+    speed = int(input("You CANNOT exceed the speed of light: 299,792 Km / s.  Please re-type your speed and press [ENTER]."))
+    if speed > light_speed:
+        print("You are stupid and cannot read.  I will now exit.  Please restart the program.")
+        exit()
+    else:
+        print("Ok, your speed is",speed,"Km / s.")
+else:
+    print("Ok, your speed is",speed,"Km / s.")
+time.sleep(3)
+
+trip_time = distance / speed
+print("The trip will take ",trip_time,"seconds to complete.")
+
+seconds_per_year = 31536000
+max_travel = seconds_per_year * 3
+
+if trip_time > max_travel:
+    print("The trip will take more than three years.  It will not succeed.  Please choose a different location.")
+else:
+    print("The trip will take three years or less.  It will succeed!  Good luck on the trip!")
+
+
+print("I will now exit in five seconds.")
+time.sleep(5)
+exit() 
+
+
+
+
+
+
+
+
+
+        
+
