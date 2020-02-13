@@ -104,8 +104,22 @@ time.sleep(3)
 
 trip_time = distance / speed
 print("The trip will take",trip_time,"seconds to complete.")
+print("I need to calculate how many years that will take...")
+time.sleep(3) 
 
+seconds_per_year = 31556952
+max_time = seconds_per_year * 3
 
+if trip_time > max_time:
+    print("The trip will take more than three years.  The mission will fail.")
+else:
+    print("The trip will take three years or less.  The mission will succeed.")
+time.sleep(3)
+
+print("I hope you have enjoyed using this program.  Good luck exploring outer space!")
+print("I will exit in 5 seconds.")
+time.sleep(5)
+exit() 
 
 
 
