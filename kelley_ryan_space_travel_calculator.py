@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 01/27/20 9:10AM, Version 0.5
+# Space Travel Calculator, Ryan Kelley, 02/13/20 10:02AM, Version 0.6
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,8 +17,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            January 27, 2020
-            Version 0.5
+            February 13, 2020
+            Version 0.6
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -57,5 +57,35 @@ print("#                                                                        
 print("# To make your selection, type in the number from the list above, then   #")
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
+
+distance = 0
+menu_choice = int(input("Please make your selection."))
+
+if menu_choice == 0:
+    distance = dist_sun
+    print("You have chosen the Sun.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 1:
+    distance = dist_mars
+    print("You have chosen Mars.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 2:
+    distance = dist_pluto
+    print("You have chosen Pluto.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 3:
+    distance = dist_alpha_centauri
+    print("You have chosen Alpha Centauri.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 4:
+    distance = dist_eps_eridani_b
+    print("You have chosen the exoplanet Eps Eridani B.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 5:
+    distance = dist_v616_mon
+    print("You have chosen the blackhole V616 Mon.  It is ",distance,"kilometers from the Earth.")
+else:
+    print("You did not make a choice from the menu.  Please select an option from the list next time.  The program will now restart.")
+    exit()    
+    
+
+
+
+
 
 

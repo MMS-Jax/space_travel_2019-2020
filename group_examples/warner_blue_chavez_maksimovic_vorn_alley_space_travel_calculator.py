@@ -1,4 +1,5 @@
-# Space Travel Calculator, Ryan Kelley, 02/12/20 9:10AM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 02/13/20 10:13AM, Version 0.65
+import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,13 +18,13 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 12, 2020
-            Version 0.6
+            February 13, 2020
+            Version 0.65
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
-
+time.sleep(3) 
 # Units of Measurement
 million = 1000000
 billion = 1000000000
@@ -55,37 +56,41 @@ print("# Once you have made your selection this program will determine the      
 print("# distance between the Earth and your chosen object.                     #")
 print("#                                                                        #")
 print("# To make your selection, type in the number from the list above, then   #")
-print("# press the ENTER key.                                                   #")
+print("# press the ENTER key.  There will be a pause before you make the choice.#")
 print("#------------------------------------------------------------------------#")
+time.sleep(3) 
+distance = 0
+menu_choice = int(input("Please make your selection."))
 
-choice = int(input("Please make your choice."))
-distance = 0 
-
-if choice == 0:
+if menu_choice == 0:
     distance = dist_sun
-    print("You have selected the Sun.  It is ",distance,"kilometers from Earth.")
-elif choice == 1:
+    print("You have chosen the Sun.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 1:
     distance = dist_mars
-    print("You have selected Mars.  It is ",distance,"kilometers from Earth.")
-elif choice == 2:
+    print("You have chosen Mars.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 2:
     distance = dist_pluto
-    print("You have selected Pluto.  It is ",distance,"kilometers from Earth.")
-elif choice == 3:
-    distance = dist_alpha_centauri 
-    print("You have selected Alpha Centauri.  It is ",distance,"kilometers from Earth.")
-elif choice == 4:
+    print("You have chosen Pluto.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 3:
+    distance = dist_alpha_centauri
+    print("You have chosen Alpha Centauri.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 4:
     distance = dist_eps_eridani_b
-    print("You have selected the exoplanet Eps Eridani B.  It is ",distance,"kilometers from Earth.")
-elif choice == 5:
+    print("You have chosen the exoplanet Eps Eridani B.  It is ",distance,"kilometers from the Earth.")
+elif menu_choice == 5:
     distance = dist_v616_mon
-    print("You have selected the blackhole V616 Mon.  It is ",distance,"kilometers from Earth.")
+    print("You have chosen the blackhole V616 Mon.  It is ",distance,"kilometers from the Earth.")
 else:
-    print("Please choose a value from the menu!  This program will now explode.  Please restart.")
-    exit()
-    
-speed = 0
-speed = int(input("Please enter a speed in Km / s.  You do not need to enter commas or the unit of measurement, just a number."))
-print(speed)
+    print("You did not make a choice from the menu.  Please select an option from the list next time.  The program will now restart.")
+    exit()    
+time.sleep(3)
 
-    
-    
+speed = 0
+speed = int(input("Please enter a speed.  Your speed is measured in Km / s.  DO NOT ENTER COMMAS.  Press [Enter] when finished."))
+            
+
+
+
+
+
+
