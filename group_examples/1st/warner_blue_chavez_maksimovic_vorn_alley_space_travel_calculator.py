@@ -102,7 +102,8 @@ else:
         print("Ok, your speed is acceptable.  You will be traveling at ",speed,"Km /s.")       
     
 
-
+trip_time = distance / speed
+print("The trip will take ",trip_time,"_________.") 
 
 
 
