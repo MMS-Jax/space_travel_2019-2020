@@ -88,7 +88,19 @@ time.sleep(3)
 speed = 0
 speed = int(input("Please enter a speed.  Your speed is measured in Km / s.  DO NOT ENTER COMMAS.  Press [Enter] when finished."))
             
+light_speed = 299792
 
+if speed > light_speed: # 1st check for speed of light. 
+    print("You have entered a value greater than the speed of light: 299792 Km / s.  That is not possible.")
+    speed = int(input("Please enter a speed LESS THAN OR EQUAL TO the speed of light."))
+    if speed > light_speed: # 2nd check for speed of light.  
+        print("It is obvious you cannot read.  Please restart the program and try again.")
+        exit()
+    else:
+        print("Ok, your speed is acceptable.  You will be traveling at ",speed,"Km /s.")
+else:
+        print("Ok, your speed is acceptable.  You will be traveling at ",speed,"Km /s.")       
+    
 
 
 
