@@ -86,7 +86,7 @@ else:
     print("You must choose a number from the menu!  Please restart the program.")
     exit() 
 
-            
+speed = int(input("Please enter your speed in Km / s.  Do not enter COMMAS or UNITS, just a number."))        
 
 
 
