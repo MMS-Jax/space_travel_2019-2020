@@ -117,6 +117,7 @@ else:
 
 print("Thank you for using the Space Travel Calculator.  Please be safe in outer space!")
 print("Say hello to the aliens for me.")
+time.sleep(3)
 exit() 
     
 
