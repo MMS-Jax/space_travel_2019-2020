@@ -103,7 +103,17 @@ else:
     
 
 trip_time = distance / speed
-print("The trip will take ",trip_time,"_________.") 
+print("The trip will take ",trip_time,"seconds.") 
+time.sleep(3)
+seconds_per_year = 3.154e+7
+max_trip = seconds_per_year * 3
 
 
+if trip_time > max_trip:
+    print("The trip will take more than three years.  It cannot succeed.  Please choose a new location or go faster."
+else:
+    print("The trip will take no longer than three years.  It should succeed.  Good luck in space!")
+time.sleep(3)
 
+print("I hope you found this program helpful. Good luck exploring the Universe.  See you next time!")
+exit() 
