@@ -1,4 +1,5 @@
-# Space Travel Calculator, Ryan Kelley, 02/18/20 3:12PM, Version 0.7
+# Space Travel Calculator, Ryan Kelley, 02/19/20 3:12PM, Version 0.8
+import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,13 +18,13 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 13, 2020
-            Version 0.7
+            February 19, 2020
+            Version 0.8
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
-
+time.sleep(3)
 # Units of Measurement
 million = 1000000
 billion = 1000000000
@@ -60,6 +61,7 @@ print("#------------------------------------------------------------------------
 
 choice = 0
 choice = int(input("What is your choice?"))
+time.sleep(3)
 # print(choice)
 
 distance = 0 
@@ -88,7 +90,33 @@ else:
 
 speed = int(input("Please enter your speed in Km / s.  Do not enter COMMAS or UNITS, just a number."))        
 
+light_speed = 299792
 
+if speed > light_speed:
+    print("You cannot go faster than light speed which is 299,792 Km / s.  Please enter a new speed.")
+    speed = int(input("Please enter your speed in Km / s.  Do not enter COMMAS or UNITS, just a number."))
+    if speed > light_speed:
+        print("You are too stupid to read instructions.  Please restart the program.")
+        exit()
+    else:
+        print("Your speed is OK.  You will travel at ",speed,"Km / s.") 
+else:
+    print("Your speed is OK.  You will travel at ",speed,"Km / s.")
 
+trip_time = distance / speed
+print("The trip will take", trip_time,"seconds to complete.")
+time.sleep(3)
+seconds_per_year = 3.154e7
+max_time = seconds_per_year * 3
+
+if trip_time > max_time:
+    print("The trip will take more than three years.  You will probably die a horrible death in space, alone.")
+else:
+    print("The will take no more than three years.  The trip will be successful.")
+time.sleep(3)
+
+print("I hope you have enjoyed using the Space Travel Calculator.  Good luck exploring the Universe!")
+time.sleep(3)
+exit() 
 
 
