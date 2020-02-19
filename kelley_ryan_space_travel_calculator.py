@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 02/13/20 10:02AM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 02/19/20 4:02PM, Version 0.7
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,8 +17,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 13, 2020
-            Version 0.6
+            February 19, 2020
+            Version 0.7
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -58,6 +58,35 @@ print("# To make your selection, type in the number from the list above, then   
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
 
+menu_choice = int(input("What is your choice?"))
+# print(menu_choice)
+
+distance = 0
+
+if menu_choice == 0:
+    distance = dist_sun
+    print("You have selected the Sun.  It is ",distance," kilometers from the Earth.")
+elif menu_choice == 1:
+    distance = dist_mars
+    print("You have selected Mars.  It is ",distance," kilometers from the Earth.")
+elif menu_choice == 2:
+    distance = dist_pluto
+    print("You have selected Pluto.  It is ",distance," kilometers from the Earth.")
+elif menu_choice == 3:
+    distance = dist_alpha_centauri
+    print("You have selected Alpha Centauri.  It is ",distance," kilometers from the Earth.")
+elif menu_choice == 4:
+    distance = dist_eps_eridani_b
+    print("You have selected the exoplanet Eps Eridani B.  It is ",distance," kilometers from the Earth.")
+elif menu_choice == 5:
+    distance = dist_v616_mon
+    print("You have selected the blackhole V616 Mon.  It is ",distance," kilometers from the Earth.")
+else:
+    print("You did not select an option from the menu.  Please restart the program.")
+    exit()
+    
+    
+ 
             
 
 
