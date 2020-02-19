@@ -58,9 +58,6 @@ print("# To make your selection, type in the number from the list above, then   
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
 
-choice = 0
-choice = int(input("What is your choice?"))
-print(choice) 
             
 
 
