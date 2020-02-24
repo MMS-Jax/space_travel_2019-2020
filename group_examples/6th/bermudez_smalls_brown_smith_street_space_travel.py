@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 02/19/20 4:02PM, Version 0.5
+# Space Travel Calculator, Ryan Kelley, 02/24/20 2:58PM, Version 0.6
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -18,7 +18,7 @@ print("""
                 by
             Ryan Kelley
             February 19, 2020
-            Version 0.5
+            Version 0.6
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
