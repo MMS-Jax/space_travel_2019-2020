@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 02/24/20 2:58PM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 02/24/20 3:16PM, Version 0.65
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,8 +17,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 19, 2020
-            Version 0.6
+            February 24, 2020
+            Version 0.65
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -61,5 +61,15 @@ print("#------------------------------------------------------------------------
 menu_choice = int(input("Please make your choice."))
 print(menu_choice)
 
+distance = 0
 
+if menu_choice == 0:
+    print("You have chosen the Sun.")
+    distance = dist_sun
+    print("It is",distance,"kilometers from the Sun.")
+else:
+    print("You did NOT choose an option from the menu.  This program will now exit.  Please restart.")
+    exit() 
+    
+    
     
