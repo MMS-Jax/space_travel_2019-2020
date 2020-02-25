@@ -58,8 +58,8 @@ print("# To make your selection, type in the number from the list above, then   
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
 
-menu_choice = int(input("Please make your choice."))
-print(menu_choice)
+selection = int(input("Please make your choice."))
+print(selection) 
 
 
     
