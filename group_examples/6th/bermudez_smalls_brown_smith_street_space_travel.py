@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 02/24/20 3:16PM, Version 0.65
+# Space Travel Calculator, Ryan Kelley, 02/25/20 2:55, Version 0.7
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,8 +17,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 24, 2020
-            Version 0.65
+            February 25, 2020
+            Version 0.7
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -66,7 +66,27 @@ distance = 0
 if menu_choice == 0:
     print("You have chosen the Sun.")
     distance = dist_sun
-    print("It is",distance,"kilometers from the Sun.")
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_choice == 1:
+    print("You have chosen Mars.")
+    distance = dist_mars
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_choice == 2:
+    print("You have chosen Pluto.")
+    distance = dist_mars
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_choice == 3:
+    print("You have chosen Alpha Centauri.")
+    distance = dist_alpha_centauri
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_choice == 4:
+    print("You have chosen the exoplanet Eps Eridani B.")
+    distance = dist_eps_eridani_b
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_choice == 5:
+    print("You have chosen the blackhole V616 Mon.")
+    distance = dist_v616_mon
+    print("It is",distance,"kilometers from the Earth.")
 else:
     print("You did NOT choose an option from the menu.  This program will now exit.  Please restart.")
     exit() 
