@@ -1,4 +1,4 @@
-# Space Travel Calculator, Ryan Kelley, 02/24/20 1:38PM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 02/25/20 1:21PM, Version 0.7
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,8 +17,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 24, 2020
-            Version 0.6
+            February 25, 2020
+            Version 0.7
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -74,7 +74,7 @@ elif save_option == 2:
     print("You have selected Pluto.  It is ",distance,"kilometers from the Earth.")
 elif save_option == 3:
     distance = dist_alpha_centauri
-    print("You have selected Alpha Centauri.  It is ",distance,"kilometers from the Earth.")v
+    print("You have selected Alpha Centauri.  It is ",distance,"kilometers from the Earth.")
 elif save_option == 4:
     distance = dist_eps_eridani_b
     print("You have selected the exoplanet Eps Eridani B.  It is ",distance,"kilometers from the Earth.")
@@ -85,6 +85,19 @@ else:
     print("Please choose an option from the menu.  The program will now stop and restart.")
     exit() 
 
+speed = int(input("Please enter your speed in Km / s.  Type ONLY numbers, no symbols."))
+print(speed)
 
+light_speed = 299792
 
+if speed > light_speed:
+    print("You have entered a speed faster than light: 299,792 Km / s.  Please re-enter speed.")
+    speed = int(input("Please enter your speed in Km / s.  Type ONLY numbers, no symbols."))
+    if speed > light_speed:
+        print("You are dumb and cannot read.  Please restart the program, loser.")
+        exit()
+    else:
+        print("The speed you entered was",speed,"Km / s.")
+else:
+    print("The speed you entered was",speed,"Km / s.")       
     
