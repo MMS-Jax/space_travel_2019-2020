@@ -109,4 +109,16 @@ else:
 trip_time = distance / speed
 print("The trip will take",trip_time,"seconds to complete.")
 
+num_seconds_year = 3.154e7
+max_time = 3 * num_seconds_year
 
+if trip_time > max_time:
+    print("The trip will take too long.  You will die in space, alone.")
+else:
+    print("The trip should succeed, it takes no more than three years.")
+
+print("Thank you for using the Space Travel Calculator.   Please be safe in space!")
+
+
+exit() 
+    
