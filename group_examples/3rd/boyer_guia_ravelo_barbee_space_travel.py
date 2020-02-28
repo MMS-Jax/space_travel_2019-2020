@@ -1,4 +1,5 @@
-# Space Travel Calculator, Ryan Kelley, 02/26/20 12:06PM, Version 0.7
+# Space Travel Calculator, Ryan Kelley, 02/28/20 12:42PM, Version 1.0
+import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -17,13 +18,13 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            February 26, 2020
-            Version 0.7
+            February 28, 2020
+            Version 1.0
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
-
+time.sleep(5)
 # Units of Measurement
 million = 1000000
 billion = 1000000000
@@ -60,7 +61,7 @@ print("#------------------------------------------------------------------------
 
 selection = int(input("Please make your choice."))
 # print(selection)
-
+time.sleep(5)
 distance = 0
 
 if selection == 0:
@@ -84,7 +85,7 @@ elif selection == 5:
 else:
     print("You did not choose an option from the menu.  Please restart the program.")
     exit()
-
+time.sleep(5)
 speed = int(input("Please enter a speed in Km / s.  DO NOT enter commas or Km / s in your answer."))
 print(speed)
 
@@ -100,7 +101,21 @@ if speed > light_speed:
         print("The speed is ",speed,"Km / s.")
 else:
     print("The speed is ",speed,"Km / s.")        
+time.sleep(5)
+trip_time = distance / speed
+print("The trip will take",trip_time,"seconds to complete.")
 
+num_secs_per_year = 3.154e7
+max_trip = num_secs_per_year * 3
 
+if trip_time > max_trip:
+    print("The trip will take more than three years.  It will not be successful.")
+else:
+    print("The trip will take no more than three years.  It should be successful.")
+time.sleep(5)
+print("Thank you for using the Space Travel Calculator.  Have fun exploring the Universe!")
+time.sleep(5)
+exit()
+    
 
     
