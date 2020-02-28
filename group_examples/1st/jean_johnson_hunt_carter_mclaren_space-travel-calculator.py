@@ -85,3 +85,4 @@ else:
     print("Please choose an option from the menu above.  The program will now exit.")
     exit() 
     
+speed = int(input("Please enter a speed in Km / s.   DO NOT use commas or units of measure."))
