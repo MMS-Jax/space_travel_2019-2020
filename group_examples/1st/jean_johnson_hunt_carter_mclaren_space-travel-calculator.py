@@ -63,6 +63,7 @@ menu_choice = int(input("What number do you want?"))
 
 distance = 0
 
+
 if menu_choice == 0:
     distance = dist_sun
     print("You have selected the Sun.  It is",distance,"kilometers from Earth.")
@@ -86,3 +87,21 @@ else:
     exit() 
     
 speed = int(input("Please enter a speed in Km / s.   DO NOT use commas or units of measure."))
+
+light_speed = 299792
+
+if speed > light_speed:
+    print("You cannot go faster than light speed: 299,792 Km / s.")
+    speed = int(input("Please enter a speed in Km / s.   DO NOT use commas or units of measure."))
+    if speed > light_speed:
+        print("You are too stupid to use this program.  Please follow directions.  I will now exit.")
+        exit()
+    else:
+        print("Your speed is ",speed,"Km / s.")
+else:
+        print("Your speed is ",speed,"Km / s.")
+
+trip_time = distance / speed
+print("The trip will take",trip_time,"seconds to complete.")
+
+
