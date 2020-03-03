@@ -59,30 +59,5 @@ print("# To make your selection, type in the number from the list above, then   
 print("# press the ENTER key.                                                   #")
 print("#------------------------------------------------------------------------#")
 
-menu_selection = int(input("What is your choice?"))
-# print(menu_selection)
 
-distance = 0
-
-if menu_selection == 0:
-    distance = dist_sun
-    print("You have chosen the Sun.  It is",distance,"kilometers from the Earth.")
-elif menu_selection == 1:
-    distance = dist_mars
-    print("You have chosen Mars.  It is",distance,"kilometers from the Earth.")
-elif menu_selection == 2:
-    distance = dist_pluto
-    print("You have chosen Pluto.  It is",distance,"kilometers from the Earth.")
-elif menu_selection == 3:
-    distance = dist_alpha_centauri
-    print("You have chosen Alpha Centauri.  It is",distance,"kilometers from the Earth.")
-elif menu_selection == 4:
-    distance = dist_eps_eridani_b
-    print("You have chosen the exoplanet Eps Eridani B.  It is",distance,"kilometers from the Earth.")
-elif menu_selection == 5:
-    distance = dist_v616_mon
-    print("You have chosen the blackhole V616 Mon.  It is",distance,"kilometers from the Earth.")
-else:
-    print("Please make sure to choose an option from the menu.  The program will now exit.")
-    exit()
     
