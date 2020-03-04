@@ -1,5 +1,5 @@
 
-# Space Travel Calculator, Ryan Kelley, 03/03/20 3:06PM, Version 0.6
+# Space Travel Calculator, Ryan Kelley, 03/04/20 3:13PM, Version 0.7
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -18,8 +18,8 @@ print("""
 ·▀▀▀  ▀  ▀ .▀▀▀ ·▀▀▀  ▀▀▀ .▀▀▀  ▀  ▀  ▀▀▀  ▀█▄▀▪.▀  ▀    
                 by
             Ryan Kelley
-            March 03, 2020
-            Version 0.6
+            March 04, 2020
+            Version 0.7
 """)
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
@@ -85,4 +85,18 @@ elif menu_selection == 5:
 else:
     print("Please make sure to choose an option from the menu.  The program will now exit.")
     exit()
-    
+
+speed = int(input("Please enter a speed in Km / s.  DO NOT enter commas or units of measure."))
+
+light_speed = 299792
+
+if speed > light_speed:
+    print("You cannot go faster than light: 299,792 Km / s.")
+    speed = int(input("Please enter a speed in Km / s.  DO NOT enter commas or units of measure."))
+    if speed > light_speed:
+        print("You are stupid.  I don't think you can read.  This program will now exit.")
+        exit()
+    else:
+        print("You have entered an acceptable speed.  You will travel at",speed,"Km / s.")
+else:
+        print("You have entered an acceptable speed.  You will travel at",speed,"Km / s.")        
