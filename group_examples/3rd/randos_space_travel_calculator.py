@@ -60,7 +60,40 @@ print("# press the ENTER key.                                                   
 print("#------------------------------------------------------------------------#")
 
 menu_option = int(input("What number do you want?"))
-print(menu_option)
+# print(menu_option)
+
+if menu_option == 0:
+    print("You have selected the Sun.")
+    distance = dist_sun
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_option == 1:
+    print("You have selected the Sun.")
+    distance = dist_mars
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_option == 2:
+    print("You have selected the Sun.")
+    distance = dist_pluto
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_option == 3:
+    print("You have selected the Sun.")
+    distance = dist_alpha_centauri
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_option == 4:
+    print("You have selected the Sun.")
+    distance = dist_eps_eridani_b
+    print("It is",distance,"kilometers from the Earth.")
+elif menu_option == 5:
+    print("You have selected the Sun.")
+    distance = dist_v616_mon
+    print("It is",distance,"kilometers from the Earth.")
+else:
+    print("You did not choose an option from the menu.")
+    print("The program will now exit.  Please restart.")
+    exit()
+
+    
+
+    
 
 
 
