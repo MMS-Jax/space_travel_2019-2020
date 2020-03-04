@@ -100,3 +100,5 @@ if speed > light_speed:
         print("You have entered an acceptable speed.  You will travel at",speed,"Km / s.")
 else:
         print("You have entered an acceptable speed.  You will travel at",speed,"Km / s.")        
+
+trip_time = distance / speed
