@@ -1,4 +1,5 @@
 # Space Travel Calculator, Ryan Kelley, 02/28/20 4:02PM, Version 0.6
+import time 
 print("""
 .▄▄ ·  ▄▄▄· ▄▄▄·  ▄▄· ▄▄▄ .                              
 ▐█ ▀. ▐█ ▄█▐█ ▀█ ▐█ ▌▪▀▄.▀·                              
@@ -23,7 +24,7 @@ print("""
 print("This Space Travel Calculator determines if an outerspace mission will take more or less than three years.")
 user_name = input("What is your name? [Please type your name and press ENTER.]  ")
 print("Hello, how are you?  It is nice to meet you", user_name,"!")
-
+time.sleep(5) 
 # Units of Measurement
 million = 1000000
 billion = 1000000000
@@ -62,7 +63,7 @@ menu_choice = int(input("What number do you want?"))
 # print(menu_choice)
 
 distance = 0
-
+time.sleep(5) 
 
 if menu_choice == 0:
     distance = dist_sun
@@ -85,7 +86,7 @@ elif menu_choice == 5:
 else:
     print("Please choose an option from the menu above.  The program will now exit.")
     exit() 
-    
+time.sleep(5)     
 speed = int(input("Please enter a speed in Km / s.   DO NOT use commas or units of measure."))
 
 light_speed = 299792
@@ -100,8 +101,19 @@ if speed > light_speed:
         print("Your speed is ",speed,"Km / s.")
 else:
         print("Your speed is ",speed,"Km / s.")
-
+time.sleep(5) 
 trip_time = distance / speed
 print("The trip will take",trip_time,"seconds to complete.")
 
+num_secs_year = 3.154e7
+max_travel = 3 * num_secs_year
+
+if trip_time > max_travel:
+    print("The trip will take more than three years to complete.  It is not safe to go!")
+else:
+    print("The mission should be safe to complete.  It will take no more than three years.")
+
+print("I hope you have enjoyed using the Space Travel Calculator.  Please be safe in space!")
+time.sleep(5) 
+exit() 
 
